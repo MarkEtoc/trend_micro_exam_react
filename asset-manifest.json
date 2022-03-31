@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/trend_micro_exam_react/static/css/main.a2f3eea5.css",
+    "main.js": "/trend_micro_exam_react/static/js/main.68310c61.js",
+    "static/js/787.6032452d.chunk.js": "/trend_micro_exam_react/static/js/787.6032452d.chunk.js",
+    "index.html": "/trend_micro_exam_react/index.html",
+    "main.a2f3eea5.css.map": "/trend_micro_exam_react/static/css/main.a2f3eea5.css.map",
+    "main.68310c61.js.map": "/trend_micro_exam_react/static/js/main.68310c61.js.map",
+    "787.6032452d.chunk.js.map": "/trend_micro_exam_react/static/js/787.6032452d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2f3eea5.css",
+    "static/js/main.68310c61.js"
+  ]
+}

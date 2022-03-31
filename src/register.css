@@ -1,0 +1,206 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Caudex', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.register {
+    width: 600px;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+.register__back {
+    position: absolute;
+    top: 2%;
+    left: 5%;
+    color: black;
+    font-size: 15px;
+}
+.register__container {
+    width: 70%;
+    height: 90%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: 
+    "start-from-free start-from-free"
+    "create-an-account create-an-account"
+    "btn--google btn--facebook"
+    "p--or-use register__line"
+    "input--first-name input--last-name"
+    "input--email input--email"
+    "input--password input--password"
+    "terms-of-service-container terms-of-service-container"
+    "button--create-free-account button--create-free-account"
+    "p--already-have-account p--already-have-account";
+    grid-gap: 10px;
+    align-content: content;
+    align-items: center;
+}
+.register__input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.register__btn {
+    background: none;
+}
+
+.register__input--text {
+    background-color: rgb(241, 245, 255);
+}
+
+.register__start-from-free {
+    grid-area: start-from-free;
+    font-size: 17px;
+    font-weight: 600;
+}
+.register__create-an-account {
+    grid-area: create-an-account;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.register__div--google {
+    border-radius: 5px;
+    border: 1px solid rgb(60, 113, 255);
+    grid-area: btn--google;    
+}
+.fa-brands {
+
+    margin-left: 5%;
+    color: rgb(60, 113, 255);
+    font-size: 20px;
+}
+.register__div--facebook {
+    border-radius: 5px;
+    border: 1px solid rgb(60, 113, 255);
+    grid-area: btn--facebook;
+}
+.register__div--google:hover,.register__div--facebook:hover {
+    background-color: rgb(60, 113, 255);
+    box-shadow: 0px 3px 2px 1px rgb(60, 113, 255);
+}
+.register__div--google:hover input, .register__div--facebook:hover input {
+    color: white;
+}
+.register__div--google:hover i, .register__div--facebook:hover i {
+    color: white;
+}
+.register__p--or-use {
+    position: relative;
+    width: 100%;
+
+    grid-area: p--or-use;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.register__line {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    height: 1px;
+    background-color: black;
+    grid-area: register__line;
+}
+.register__input--first-name {
+grid-area: input--first-name;
+}
+.register__input--last-name {
+grid-area: input--last-name;
+}
+.register__input--email {
+grid-area: input--email;
+}
+.register__password-error-container {
+
+    position: absolute;
+    display: flex;
+    justify-content: row;
+    margin-top: 15%;
+    font-size: 10px;
+}
+.register__password {
+    grid-area: input--password;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.register__password .fa-eye {
+    position: absolute;
+    right: 5%;
+    color: gray;
+    cursor: pointer;
+}
+.register__input--password {
+    width: 100%;
+}
+.register__terms-of-service-container {
+grid-area: terms-of-service-container;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-content: center;
+align-items: center;
+}
+.register__input--terms-of-service {
+    color: gray;
+}
+.register__label--terms-of-service {
+    margin-left: 5%;
+    color: rgb(86, 86, 86);
+    font-size: 13px;
+}
+.register__button--create-free-account {
+grid-area: button--create-free-account;
+background-color: rgb(60, 113, 255);
+color: white;
+}
+.register__p--already-have-account {
+grid-area: p--already-have-account;
+position: relative;
+text-align: center;
+color: rgb(86, 86, 86);
+font-size: 13px;
+}
+.register__p--already-have-account a {
+    color: rgb(60, 113, 255);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 600px) {
+    .register {
+      width: 90%;
+    }
+    .register__container  {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+
+    .register__line {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .register {
+        width: 400px;
+      }
+
+}
